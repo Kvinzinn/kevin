@@ -1,0 +1,59 @@
+/* Estilo do título */
+.tituloprin2 {
+    color: purple;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    animation: mover 4s infinite;
+}
+
+@keyframes cair   {
+        0% {transform: translateX(0); }
+        25% {transform: translateX(50px); }
+        50% {transform: translateX(0); }
+        75% {transform: translateX(-50px); }
+        100% {transform: translateX(0); }
+  
+
+}
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    transition: 0.3s;
+    padding-top: 20px;
+    border-radius: 10px; /* Arredonda os cantos da aba lateral */
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); /* Sombras para dar um efeito 3D */
+}
+
+/* Estilo dos links dentro da aba lateral */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: grey;
+}
+
+/* Estilo do botão para abrir/fechar a aba lateral */
+.botao {
+    position: absolute;
+    top: 10px; /* Alinha o botão no topo */
+    left: 10px; /* Alinha o botão à esquerda */
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 2; /* Botão fica acima da aba lateral */
+}
